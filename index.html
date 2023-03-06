@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400&display=swap" rel="stylesheet">
+    <title>Conoce tu horario de sueño</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1 class="header-title">Calcula tu ciclo de sueño</h1>
+    </header>
+
+    
+    <div>
+        <p class="info-text">Para que tengas una buena noche de descanso lo ideal es que duermas de 5 a 6 ciclos de aproximadamente 90 minutos</p>
+    </div>
+
+    <div class="div-information">
+        <h2 class="h2-subtitle">Si te duermes ya,  ¿Cuáles son los horarios ideales para despertarte?</h2>
+        <div class="container-button">
+        <button class="btnCalcular" id="getHours">Conocer horarios</button>
+        </div>  
+    </div>
+    
+    <section id="section-hours">
+    <div class="hours-information" id="infoBox" style="display: none;">
+        <p>Teniendo en cuenta que nos demoramos aproximadamente 14 minutos en dormirnos, si te acuestas ya, los mejores horarios para despertar son:
+        </p>
+        <ul id="hoursBox"></ul>
+    </div>
+    </section>  
+
+    <script src="script.js"></script>
+</body>
+</html>

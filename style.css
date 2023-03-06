@@ -1,0 +1,164 @@
+:root {
+    --color1: #E5E0FF;
+    --color2: #FFF2F2;
+    --color3: #8EA7E9;
+    --color4: #7286D3;
+    --subtitle: 2.6rem;
+    --lg: 2rem;
+    --md: 1.8rem;
+    --sm: 1.6rem;
+    --sm-li: 1.5rem;
+}
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    background-image: url(./background-img/landscape-1844231-min.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.header-title {
+   color: var(--color1);
+   font-size: 3.4rem;
+    margin-top: 2rem;
+    margin-bottom: 5rem;
+   font-weight: 900;
+   display: flex;
+   justify-content: center;
+   
+}
+.info-text {
+    font-size: var(--lg);
+    color: var(--color2);
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    margin-left: 8rem;
+    margin-right: 8rem;
+    text-align: center;
+}
+.h2-subtitle {
+    font-size: var(--subtitle);
+    margin-top: 3rem;
+    display: flex;
+    justify-content: center;
+    color: var(--color3);
+    margin-left: 8rem;
+    margin-right: 8rem;
+    text-align: center;
+}
+.container-button {
+    display: flex;
+    justify-content: center;
+}
+.btnCalcular {
+    width: 25rem;
+    height: 6vh;
+    border-radius: 8px;
+    border: transparent;
+    margin-top: 3rem;
+    cursor: pointer;
+    background-color: var(--color4);
+    color: var(--color2);
+    font-weight: bold;
+    font-size: var(--sm);
+}
+
+#section-hours {
+    display: flex;
+    justify-content: center;
+    
+}
+
+.hours-information {
+    font-size: var(--md);
+    font-weight: 600;
+    color: var(--color2);
+    text-align: center;
+    margin-top: 4rem;
+    margin-left: 8rem;
+    margin-right: 8rem;
+    width: 60%;   
+}
+
+.hours-information p {
+    font-size: var(--lg);
+}
+
+.hours-information ul {
+    padding-left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hours-information ul li {
+    margin-top: 3rem;
+    background-color: var(--color3);
+    width: 25rem;
+    height: 3rem;
+    border-radius: 8px;
+   padding: 3px;
+}
+.hours-information li {
+    list-style: none;
+}
+.hours-information li:nth-child(6) {
+    margin-bottom: 7rem;
+}
+
+@media (max-width: 768px) {
+    .header-title { 
+        margin-bottom: 2rem;
+    }
+    .info-text {
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+    .h2-subtitle {
+        text-align: center;
+        color: var(--color3);
+    }
+    #section-hours {
+        margin-top: -1rem;
+    }
+    .hours-information {
+        width: 65rem;
+    }
+}
+
+@media (max-width: 468px) {
+    .header-title {
+        font-size: 3rem;
+    }
+    
+    .info-text {
+        font-size: 1.8rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+    .h2-subtitle {
+        font-size: 2rem;
+        margin-top: 4rem;
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+    .hours-information p {
+        font-size: 1.8rem;
+        margin-left: -4rem;
+        margin-right: -4rem;
+    }
+    .hours-information ul li {
+        font-size: 1.4rem;
+        padding-top: 5px;
+    }
+}
